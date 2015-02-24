@@ -4,21 +4,18 @@ using HtmlAgilityPack;
 
 namespace DITechniques.ServiceLocator.Engines
 {
-    class ProductParserEngine : IProductParserEngine
+    class ProductParserEngine : EngineBase, IProductParserEngine
     {
-        public decimal GetProductPrice(string productPageContents)
+        public decimal GetProductPrice(string productPageContents, string productCode)
         {
             var doc = new HtmlDocument();
             doc.LoadHtml(productPageContents);
 
-            // look for price in the following order...
-            // //*[@id="priceblock_ourprice"]
-            // //*[@id="priceblock_saleprice"]
-            // //*[@id="actualPriceValue"]
+            // get the correct XPath for the specific product
+            IProductAccessor productAccessor = AccessorFactory.CreateAccessor<IProductAccessor>();
+            string xpath = productAccessor.GetXPath(productCode);
 
-            HtmlNode priceNode = doc.DocumentNode.SelectSingleNode(@"//*[@id='priceblock_ourprice']") ??
-                                 (doc.DocumentNode.SelectSingleNode(@"//*[@id='priceblock_saleprice']") ??
-                                    doc.DocumentNode.SelectSingleNode(@"//*[@id='actualPriceValue']"));
+            HtmlNode priceNode = doc.DocumentNode.SelectSingleNode(xpath);
 
             decimal price = -1.00m;
             if (priceNode != null)

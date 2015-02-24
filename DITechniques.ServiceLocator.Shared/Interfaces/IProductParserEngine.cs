@@ -3,6 +3,6 @@ namespace DITechniques.ServiceLocator.Shared.Interfaces
 {
     public interface IProductParserEngine
     {
-        decimal GetProductPrice(string productPageContents);
+        decimal GetProductPrice(string productPageContents, string productCode);
     }
 }

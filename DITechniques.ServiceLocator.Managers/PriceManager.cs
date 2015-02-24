@@ -25,7 +25,7 @@ namespace DITechniques.ServiceLocator.Managers
             // get the stored product information
             var product = productAccessor.FindByCode(productCode);
             // get the current price
-            decimal currentPrice = priceEngine.GetProductPrice(contents);
+            decimal currentPrice = priceEngine.GetProductPrice(contents, productCode);
             // if the current price is different from the price threshold then send an email
             if (currentPrice > 0)
             {
