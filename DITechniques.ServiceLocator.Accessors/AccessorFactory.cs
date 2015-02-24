@@ -10,6 +10,9 @@ namespace DITechniques.ServiceLocator.Accessors
             if (typeof(T) == typeof(IProductAccessor))
                 return new ProductAccessor() as T;
 
+            if (typeof(T) == typeof(IEmailAccessor))
+                return new EmailAccessor() as T;
+
             throw new ArgumentException(typeof(T).Name + " is not supported by this factory");
         }
     }

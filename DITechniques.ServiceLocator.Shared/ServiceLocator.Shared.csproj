@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="DataContracts\Product.cs" />
     <Compile Include="Interfaces\IAccessorFactory.cs" />
+    <Compile Include="Interfaces\IEmailAccessor.cs" />
     <Compile Include="Interfaces\IEngineFactory.cs" />
     <Compile Include="Interfaces\IManagerFactory.cs" />
     <Compile Include="Interfaces\IPriceManager.cs" />

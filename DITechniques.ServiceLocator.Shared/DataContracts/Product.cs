@@ -3,7 +3,6 @@
     public class Product
     {
         public string ProductCode { get; set; }
-        public decimal LastPrice { get; set; }
-        public string ProductUrl { get; set; }
+        public decimal PriceThreshold { get; set; }
     }
 }

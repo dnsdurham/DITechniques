@@ -1,5 +1,4 @@
-﻿using System;
-using DITechniques.ServiceLocator.Shared.DataContracts;
+﻿using DITechniques.ServiceLocator.Shared.DataContracts;
 using DITechniques.ServiceLocator.Shared.Interfaces;
 
 namespace DITechniques.ServiceLocator.Accessors
@@ -8,7 +7,12 @@ namespace DITechniques.ServiceLocator.Accessors
     {
         public Product FindByCode(string productCode)
         {
-            throw new NotImplementedException();
+            // simulating a storage layer
+            return new Product()
+            {
+                ProductCode = "B00007E7JU",
+                PriceThreshold = 124.99m
+            };
         }
     }
 }
