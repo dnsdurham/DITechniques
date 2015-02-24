@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service Locator", "Service Locator", "{552320C6-2744-4BD2-9DB3-D617CD28DAAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Constructor", "Constructor", "{0A08E99D-5361-409E-BF16-88E0C115AE82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setter", "Setter", "{EEE42EFA-A289-4B9F-A979-52EE9C2617D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Clients", "1. Clients", "{FCB4B212-9C6F-460A-BE98-B0F77A8A6329}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Managers", "2. Managers", "{E489E938-F9FE-4C5D-A192-424E1B383B5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Engines", "3. Engines", "{DA4CAD88-A704-4014-8D21-75F4493FC569}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Resource Accessors", "4. Resource Accessors", "{7216DCB3-07EF-4812-8373-DE0B679B7873}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Shared", "5. Shared", "{7D10B042-3C88-4A01-881F-C3A1768C7407}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLocator.Shared", "DITechniques.ServiceLocator.Shared\ServiceLocator.Shared.csproj", "{3F007FFD-15AB-4948-A1B8-0D5C03157977}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLocator.Engines", "DITechniques.ServiceLocator.Engines\ServiceLocator.Engines.csproj", "{9B92CD3B-B427-43F2-B2D0-7111DB0AAE8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLocator.Managers", "DITechniques.ServiceLocator.Managers\ServiceLocator.Managers.csproj", "{38519B05-DE81-4850-ADE3-910F499B1DD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DITechniques.ServiceLocator.Accessors", "DITechniques.ServiceLocator.Accessors\DITechniques.ServiceLocator.Accessors.csproj", "{3C9E4756-A622-41FF-9DCE-BB87B01BBBC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLocator.Client", "DITechniques.ServiceLocator.Client\ServiceLocator.Client.csproj", "{F54225BA-4B11-4936-884E-0390B69C8C74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F007FFD-15AB-4948-A1B8-0D5C03157977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F007FFD-15AB-4948-A1B8-0D5C03157977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F007FFD-15AB-4948-A1B8-0D5C03157977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F007FFD-15AB-4948-A1B8-0D5C03157977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B92CD3B-B427-43F2-B2D0-7111DB0AAE8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B92CD3B-B427-43F2-B2D0-7111DB0AAE8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B92CD3B-B427-43F2-B2D0-7111DB0AAE8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B92CD3B-B427-43F2-B2D0-7111DB0AAE8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38519B05-DE81-4850-ADE3-910F499B1DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38519B05-DE81-4850-ADE3-910F499B1DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38519B05-DE81-4850-ADE3-910F499B1DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38519B05-DE81-4850-ADE3-910F499B1DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C9E4756-A622-41FF-9DCE-BB87B01BBBC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C9E4756-A622-41FF-9DCE-BB87B01BBBC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C9E4756-A622-41FF-9DCE-BB87B01BBBC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C9E4756-A622-41FF-9DCE-BB87B01BBBC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F54225BA-4B11-4936-884E-0390B69C8C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F54225BA-4B11-4936-884E-0390B69C8C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F54225BA-4B11-4936-884E-0390B69C8C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F54225BA-4B11-4936-884E-0390B69C8C74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FCB4B212-9C6F-460A-BE98-B0F77A8A6329} = {552320C6-2744-4BD2-9DB3-D617CD28DAAB}
+		{E489E938-F9FE-4C5D-A192-424E1B383B5A} = {552320C6-2744-4BD2-9DB3-D617CD28DAAB}
+		{DA4CAD88-A704-4014-8D21-75F4493FC569} = {552320C6-2744-4BD2-9DB3-D617CD28DAAB}
+		{7216DCB3-07EF-4812-8373-DE0B679B7873} = {552320C6-2744-4BD2-9DB3-D617CD28DAAB}
+		{7D10B042-3C88-4A01-881F-C3A1768C7407} = {552320C6-2744-4BD2-9DB3-D617CD28DAAB}
+		{3F007FFD-15AB-4948-A1B8-0D5C03157977} = {7D10B042-3C88-4A01-881F-C3A1768C7407}
+		{9B92CD3B-B427-43F2-B2D0-7111DB0AAE8C} = {DA4CAD88-A704-4014-8D21-75F4493FC569}
+		{38519B05-DE81-4850-ADE3-910F499B1DD9} = {E489E938-F9FE-4C5D-A192-424E1B383B5A}
+		{3C9E4756-A622-41FF-9DCE-BB87B01BBBC9} = {7216DCB3-07EF-4812-8373-DE0B679B7873}
+		{F54225BA-4B11-4936-884E-0390B69C8C74} = {FCB4B212-9C6F-460A-BE98-B0F77A8A6329}
+	EndGlobalSection
+EndGlobal
