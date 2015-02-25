@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3C9E4756-A622-41FF-9DCE-BB87B01BBBC9}</ProjectGuid>
+    <ProjectGuid>{8E02661E-D2EE-473D-AA06-1FBC13E1FF86}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DITechniques.ServiceLocator.Accessors</RootNamespace>
-    <AssemblyName>DITechniques.ServiceLocator.Accessors</AssemblyName>
+    <RootNamespace>DITechniques.Constructor.Managers</RootNamespace>
+    <AssemblyName>DITechniques.Constructor.Managers</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,16 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccessorFactory.cs" />
-    <Compile Include="EmailAccessor.cs" />
-    <Compile Include="ProductAccessor.cs" />
-    <Compile Include="ProductConfigAccessor.cs" />
+    <Compile Include="ManagerBootstrapper.cs" />
+    <Compile Include="PriceManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DITechniques.ServiceLocator.Shared\ServiceLocator.Shared.csproj">
-      <Project>{3F007FFD-15AB-4948-A1B8-0D5C03157977}</Project>
-      <Name>ServiceLocator.Shared</Name>
+    <ProjectReference Include="..\DITechniques.Constructor.Shared\Constructor.Shared.csproj">
+      <Project>{F89C47C2-5B65-4C06-8D10-1E8F087D2F19}</Project>
+      <Name>Constructor.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

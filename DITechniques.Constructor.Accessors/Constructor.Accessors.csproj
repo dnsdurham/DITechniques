@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F89C47C2-5B65-4C06-8D10-1E8F087D2F19}</ProjectGuid>
+    <ProjectGuid>{5AC139F9-C2A8-4EF0-BFBA-35701A5462D4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DITechniques.Constructor.Shared</RootNamespace>
-    <AssemblyName>DITechniques.Constructor.Shared</AssemblyName>
+    <RootNamespace>DITechniques.Constructor.Accessors</RootNamespace>
+    <AssemblyName>DITechniques.Constructor.Accessors</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,11 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessorBootstrapper.cs" />
+    <Compile Include="EmailAccessor.cs" />
+    <Compile Include="ProductAccessor.cs" />
+    <Compile Include="ProductConfigAccessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DataContracts\" />
-    <Folder Include="Interfaces\" />
+    <ProjectReference Include="..\DITechniques.Constructor.Shared\Constructor.Shared.csproj">
+      <Project>{F89C47C2-5B65-4C06-8D10-1E8F087D2F19}</Project>
+      <Name>Constructor.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

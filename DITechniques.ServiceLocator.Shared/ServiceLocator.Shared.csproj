@@ -46,6 +46,7 @@
     <Compile Include="Interfaces\IManagerFactory.cs" />
     <Compile Include="Interfaces\IPriceManager.cs" />
     <Compile Include="Interfaces\IProductAccessor.cs" />
+    <Compile Include="Interfaces\IProductConfigAccessor.cs" />
     <Compile Include="Interfaces\IProductParserEngine.cs" />
     <Compile Include="Interfaces\IWebPageEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
