@@ -11,6 +11,5 @@ namespace DITechniques.ServiceLocator.Engines
         {
             AccessorFactory = new AccessorFactory();
         }
-
     }
 }

@@ -12,9 +12,10 @@ namespace DITechniques.Constructor.Client
             {
                 ContainerBootstrapper.RegisterTypes(container);
 
-                // Resolve the concrete price manager class from the container registrations
-                // This step will also resolves the dependencies of price manager and any of
-                // their dependencies
+                // Resolve the concrete price manager class from 
+                // the container registrations
+                // This step also resolves the dependencies of
+                // price manager and any of their dependencies
                 var priceManager = container.Resolve<IPriceManager>();
                 priceManager.ProcessPriceUpdates("B00007E7JU");
 

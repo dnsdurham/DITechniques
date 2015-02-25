@@ -4,7 +4,7 @@ using DITechniques.ServiceLocator.Shared.Interfaces;
 
 namespace DITechniques.ServiceLocator.Managers
 {
-    public class ManagerBase
+    class ManagerBase
     {
         public IEngineFactory EngineFactory { get; set; }
         public IAccessorFactory AccessorFactory { get; set; }
