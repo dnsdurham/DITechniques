@@ -3,7 +3,7 @@ using DITechniques.ServiceLocator.Shared.Interfaces;
 
 namespace DITechniques.ServiceLocator.Engines
 {
-    public class EngineFactory : IEngineFactory
+    public class EngineLocator : IEngineLocator
     {
         public T CreateEngine<T>() where T : class
         {
@@ -13,7 +13,7 @@ namespace DITechniques.ServiceLocator.Engines
             if (typeof(T) == typeof(IProductParserEngine))
                 return new ProductParserEngine() as T;
 
-            throw new ArgumentException(typeof(T).Name + " is not supported by this factory");
+            throw new ArgumentException(typeof(T).Name + " is not supported by this locator");
         }
     }
 }

@@ -6,13 +6,13 @@ namespace DITechniques.ServiceLocator.Managers
 {
     class ManagerBase
     {
-        public IEngineFactory EngineFactory { get; set; }
-        public IAccessorFactory AccessorFactory { get; set; }
+        public IEngineLocator EngineLocator { get; set; }
+        public IAccessorLocator AccessorLocator { get; set; }
 
         protected ManagerBase()
         {
-            EngineFactory = new EngineFactory();
-            AccessorFactory = new AccessorFactory();
+            EngineLocator = new EngineLocator();
+            AccessorLocator = new AccessorLocator();
         }
     }
 }

@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccessorFactory.cs" />
+    <Compile Include="AccessorLocator.cs" />
     <Compile Include="EmailAccessor.cs" />
     <Compile Include="ProductAccessor.cs" />
     <Compile Include="ProductConfigAccessor.cs" />

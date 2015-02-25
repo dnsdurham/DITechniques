@@ -7,10 +7,10 @@ namespace DITechniques.ServiceLocator.Managers
         public void ProcessPriceUpdates(string productCode)
         {
             // get the necessary dependencies
-            IWebPageEngine pageEngine = EngineFactory.CreateEngine<IWebPageEngine>();
-            IProductParserEngine priceEngine = EngineFactory.CreateEngine<IProductParserEngine>();
-            IProductAccessor productAccessor = AccessorFactory.CreateAccessor<IProductAccessor>();
-            IEmailAccessor emailAccessor = AccessorFactory.CreateAccessor<IEmailAccessor>();
+            IWebPageEngine pageEngine = EngineLocator.CreateEngine<IWebPageEngine>();
+            IProductParserEngine priceEngine = EngineLocator.CreateEngine<IProductParserEngine>();
+            IProductAccessor productAccessor = AccessorLocator.CreateAccessor<IProductAccessor>();
+            IEmailAccessor emailAccessor = AccessorLocator.CreateAccessor<IEmailAccessor>();
 
             // build the url
             string url = pageEngine.BuildUrl(productCode);

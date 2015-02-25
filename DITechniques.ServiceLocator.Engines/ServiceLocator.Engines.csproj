@@ -43,7 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EngineBase.cs" />
-    <Compile Include="EngineFactory.cs" />
+    <Compile Include="EngineLocator.cs" />
     <Compile Include="ProductParserEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebPageEngine.cs" />

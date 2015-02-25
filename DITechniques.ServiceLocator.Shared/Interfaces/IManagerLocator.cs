@@ -1,7 +1,7 @@
 ﻿
 namespace DITechniques.ServiceLocator.Shared.Interfaces
 {
-    public interface IManagerFactory
+    public interface IManagerLocator
     {
         T CreateManager<T>() where T : class;
     }

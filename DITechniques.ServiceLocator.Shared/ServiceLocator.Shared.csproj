@@ -40,10 +40,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContracts\Product.cs" />
-    <Compile Include="Interfaces\IAccessorFactory.cs" />
+    <Compile Include="Interfaces\IAccessorLocator.cs" />
     <Compile Include="Interfaces\IEmailAccessor.cs" />
-    <Compile Include="Interfaces\IEngineFactory.cs" />
-    <Compile Include="Interfaces\IManagerFactory.cs" />
+    <Compile Include="Interfaces\IEngineLocator.cs" />
+    <Compile Include="Interfaces\IManagerLocator.cs" />
     <Compile Include="Interfaces\IPriceManager.cs" />
     <Compile Include="Interfaces\IProductAccessor.cs" />
     <Compile Include="Interfaces\IProductConfigAccessor.cs" />

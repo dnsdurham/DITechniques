@@ -5,11 +5,11 @@ namespace DITechniques.ServiceLocator.Engines
 {
     class EngineBase
     {
-        public IAccessorFactory AccessorFactory { get; set; }
+        public IAccessorLocator AccessorLocator { get; set; }
 
         protected EngineBase()
         {
-            AccessorFactory = new AccessorFactory();
+            AccessorLocator = new AccessorLocator();
         }
     }
 }

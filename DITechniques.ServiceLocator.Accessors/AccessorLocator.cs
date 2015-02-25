@@ -3,7 +3,7 @@ using DITechniques.ServiceLocator.Shared.Interfaces;
 
 namespace DITechniques.ServiceLocator.Accessors
 {
-    public class AccessorFactory : IAccessorFactory
+    public class AccessorLocator : IAccessorLocator
     {
         public T CreateAccessor<T>() where T : class
         {
@@ -16,7 +16,7 @@ namespace DITechniques.ServiceLocator.Accessors
             if (typeof(T) == typeof(IProductConfigAccessor))
                 return new ProductConfigAccessor() as T;
 
-            throw new ArgumentException(typeof(T).Name + " is not supported by this factory");
+            throw new ArgumentException(typeof(T).Name + " is not supported by this locator");
         }
     }
 }

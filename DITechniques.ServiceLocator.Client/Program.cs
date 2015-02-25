@@ -9,9 +9,9 @@ namespace DITechniques.ServiceLocator.Client
         static void Main()
         {
             // NOTE: in "real" world would likely use a base class for access to the 
-            // manager factory similar to ManagerBase
-            IManagerFactory managerFactory = new ManagerFactory();
-            IPriceManager priceManager = managerFactory.CreateManager<IPriceManager>();
+            // manager locator similar to ManagerBase
+            IManagerLocator managerLocator = new ManagerLocator();
+            IPriceManager priceManager = managerLocator.CreateManager<IPriceManager>();
             priceManager.ProcessPriceUpdates("B00007E7JU");
 
             Console.ReadLine();

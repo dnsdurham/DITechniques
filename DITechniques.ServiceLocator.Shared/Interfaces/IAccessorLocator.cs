@@ -1,7 +1,7 @@
 ﻿
 namespace DITechniques.ServiceLocator.Shared.Interfaces
 {
-    public interface IAccessorFactory
+    public interface IAccessorLocator
     {
         T CreateAccessor<T>() where T : class;
     }

@@ -12,7 +12,7 @@ namespace DITechniques.ServiceLocator.Engines
             doc.LoadHtml(productPageContents);
 
             // get the correct XPath for the specific product
-            IProductConfigAccessor productConfigAccessor = AccessorFactory.CreateAccessor<IProductConfigAccessor>();
+            IProductConfigAccessor productConfigAccessor = AccessorLocator.CreateAccessor<IProductConfigAccessor>();
             string xpath = productConfigAccessor.GetXPath(productCode);
 
             HtmlNode priceNode = doc.DocumentNode.SelectSingleNode(xpath);
