@@ -8,7 +8,7 @@ namespace DITechniques.Constructor.Accessors
         {
             // simulating a service that returns the Xpath query for the
             // price of a specific product code
-            return @"//*[@id='actualPriceValue']";
+            return @"//*[@id='priceblock_ourprice']";
         }
     }
 }
