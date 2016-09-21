@@ -1,2 +1,2 @@
 # DITechniques
-A sampel of techniques for Dependency Injection
+A sample of techniques for Dependency Injection
